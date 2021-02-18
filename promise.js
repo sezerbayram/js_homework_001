@@ -39,3 +39,22 @@ function eveDon() {
         }, 500);
     });
 };
+marketeGit()
+
+    .then((data) => {
+        
+        
+       alisverisYap()
+
+        .then((data) => {
+           
+            eveDon();        
+        })
+        .catch((hata) => {
+            console.log(hata);
+        });    
+    })
+    .catch((hata) => {
+        console.log(hata);
+    });
+
